@@ -1377,6 +1377,7 @@ class Client:
                             method,
                             _construct_url(self.api_url, pathname),
                             stream=False,
+                            verify=False,
                             **request_kwargs,
                         )
                     ls_utils.raise_for_status_with_text(response)
